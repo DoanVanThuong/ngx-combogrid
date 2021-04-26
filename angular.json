@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "ngx-combogrid-library": {
+      "projectType": "library",
+      "root": "projects/ngx-combogrid-library",
+      "sourceRoot": "projects/ngx-combogrid-library/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-combogrid-library/tsconfig.lib.json",
+            "project": "projects/ngx-combogrid-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-combogrid-library/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-combogrid-library/src/test.ts",
+            "tsConfig": "projects/ngx-combogrid-library/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-combogrid-library/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-combogrid-library/tsconfig.lib.json",
+              "projects/ngx-combogrid-library/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngx-combogrid"
 }

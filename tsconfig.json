@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-combogrid-library": [
+        "dist/ngx-combogrid-library/ngx-combogrid-library",
+        "dist/ngx-combogrid-library"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
