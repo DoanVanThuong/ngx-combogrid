@@ -1,16 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-combogrid-library',
-  template: `
-    <p>
-      ngx-combogrid-library works!
-    </p>
-  `,
-  styles: [
-  ]
+  selector: 'ngx-combogrid',
+  templateUrl: './ngx-combogrid-library.component.html',
+  styleUrls: ['./ngx-combogrid-library.component.scss']
 })
-export class NgxCombogridLibraryComponent implements OnInit {
+export class NgxCombogridComponent implements OnInit {
 
   constructor() { }
 

@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { NgxCombogridLibraryComponent } from './ngx-combogrid-library.component';
+import { NgxCombogridComponent } from './ngx-combogrid-library.component';
+import { HighlightPipe } from './pipe/hightlight.pipe';
 
 
 
 @NgModule({
-  declarations: [NgxCombogridLibraryComponent],
+  declarations: [NgxCombogridComponent, HighlightPipe],
   imports: [
   ],
-  exports: [NgxCombogridLibraryComponent]
+  exports: [NgxCombogridComponent]
 })
 export class NgxCombogridLibraryModule { }
