@@ -1,5 +1,5 @@
 {
-  "name": "ngx-combogrid-library",
+  "name": "ngx-combogrid",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.1.13",

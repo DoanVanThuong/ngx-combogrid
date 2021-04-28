@@ -5,6 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build ngx-combogrid-library",
+    "npm_pack": "cd dist/ngx-combogrid-library && npm pack",
+    "package": "npm run build:lib && npm run npm_pack",
+    "publish": "npm publish dist/ngx-combogrid-library",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
